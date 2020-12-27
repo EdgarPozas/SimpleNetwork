@@ -1,0 +1,15 @@
+en
+config t
+hostname SwitchA
+vlan 10
+name v10
+vlan 20
+name v20
+int range fa0/1-10
+switchport mode access
+switchport access vlan 10
+int range fa0/10-20
+switchport mode access
+switchport access vlan 20
+int g0/1
+switchport mode trunk

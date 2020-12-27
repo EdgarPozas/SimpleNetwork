@@ -1,0 +1,15 @@
+en
+config t
+hostname SwitchB
+vlan 30
+name v30
+vlan 40
+name v40
+int range fa0/1-10
+switchport mode access
+switchport access vlan 30
+int range fa0/10-20
+switchport mode access
+switchport access vlan 40
+int g0/1
+switchport mode trunk
